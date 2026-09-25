@@ -2,7 +2,7 @@
 End-to-end demo of the Vault distributed object store.
 Run: python3 demo.py
 """
-
+import time
 import threading
 import time
 from coordinator import Cluster, QuorumNotReached
@@ -124,3 +124,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+while True:
+    time.sleep(3600)
